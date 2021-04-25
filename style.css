@@ -1,0 +1,175 @@
+@font-face {
+    font-family: ArabDances;
+    src: url('font/ArabDances.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    height: 650px;
+    background-image: url(images/BG2.2.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.container .menu-icon {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: none;
+}
+
+nav {
+    width: 90%;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid white;
+}
+
+nav h2 {
+    font-family: ArabDances;
+    font-weight: normal;
+    font-size: 35px;
+    color: #ffc93c;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+}
+
+nav ul li a:hover {
+    color: #ffc93c;
+    border-bottom: 1px solid white;
+    font-weight: bold;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 30%;
+}
+
+.left-col {
+    width: 50%;
+    margin-left: 5%;
+    color: white;
+}
+
+.left-col h1 {
+    color: #ffc93c;
+    padding: 15px 0;
+    font-size: 60px;
+}
+
+.left-col h2 {
+    font-size: 30px;
+    letter-spacing: 10px;
+}
+
+.left-col p {
+    text-align: justify;
+    line-height: 28px;
+    font-size: 18px;
+}
+
+.left-col p span {
+    color: #397089;
+    font-weight: bold;
+}
+
+.play {
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.play p {
+    font-size: 20px;
+    color: #397089;
+    font-weight: bold;
+    background-color: thistle;
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+#icon {
+    width: 50px;
+    cursor: pointer;
+}
+
+@media (max-width:1000px) {
+    .content {
+        width: 100%;
+        position: absolute;
+        top: 25%;
+    }
+    .left-col h1 {
+        color: #ffc93c;
+        padding: 15px 0;
+        font-size: 48px;
+    }
+}
+
+@media (max-width:670px) {
+    nav h2 {
+        font-weight: small;
+        font-size: 28px;
+    }
+    .left-col {
+        width: 60%;
+        margin-left: 7%;
+        color: white;
+    }
+    .container .menu-icon {
+        display: block;
+        background-color: wheat;
+        padding: 10px;
+    }
+    .container .menu-icon:hover {
+        cursor: pointer;
+    }
+    .left-col h1 {
+        color: #ffc93c;
+        padding: 15px 0;
+        font-size: 53px;
+    }
+    .left-col h2 {
+        font-size: 30px;
+        letter-spacing: 8px;
+    }
+    nav {
+        width: 85%;
+    }
+    nav ul li a {
+        display: none;
+    }
+    .container {
+        height: 740px;
+    }
+    .play {
+        margin: 0px;
+    }
+    .content {
+        width: 100%;
+        position: absolute;
+        top: 20%;
+    }
+}
