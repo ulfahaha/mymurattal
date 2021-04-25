@@ -167,6 +167,15 @@ nav ul li a:hover {
     .play {
         margin: 0px;
     }
+    .play p {
+    font-size: 14px;
+    color: #397089;
+    font-weight: bold;
+    background-color: thistle;
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
     .content {
         width: 100%;
         position: absolute;
