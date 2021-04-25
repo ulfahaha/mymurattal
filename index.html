@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>My Murattal : Easy Way to Listen Al Qur'an</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <h2>My Murattal</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Surah</a></li>
+                <li><a href="#">Playlist</a></li>
+            </ul>
+            <span class="fa fa-bars menu-icon"></span>
+        </nav>
+        <div class="content">
+            <div class="left-col">
+                <h2>RAMADHAN.</h2>
+                <h1>SYAHRUL QUR'AN.</h1>
+                <p>'Bulan Ramadhan, bulan yang di dalamnya diturunkan (permulaan) <span>Al Qur'an</span> sebagai petunjuk bagi manusia dan penjelasan-penjelasan mengenai petunjuk itu dan pembeda (antara yang haq dan yang bathil) ...' <br> [Al-Baqarah : 185]</p>
+                <div class="play">
+                    <p>Click here to listen</p>
+                    <img src="images/play.png" id="icon">
+                </div>
+            </div>
+        </div>
+        <audio id="myMuratal">
+            <source src="media/maryam.mp3" type="audio/mp3">
+        </audio>
+
+        <script>
+            var myMuratal = document.getElementById("myMuratal");
+            var icon = document.getElementById("icon");
+
+            icon.onclick = function() {
+                if (myMuratal.paused) {
+                    myMuratal.play();
+                    icon.src = "images/pause.png";
+                } else {
+                    myMuratal.pause();
+                    icon.src = "images/play.png";
+                }
+            }
+        </script>
+
+    </div>
+</body>
+
+</html>
